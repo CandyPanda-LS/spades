@@ -5,8 +5,7 @@ const addTodo = async (req, res) => {
     try {
         const newTodo = new Todo({
             title,
-            status: "todo",
-            createdDate: Date.now()
+            status: false,
 
         });
 
@@ -46,7 +45,7 @@ const updateTodoStatus = async (req, res) => {
         const todo = await Todo.findById(req.params.id);
         if (todo != null) {
           await Todo.findByIdAndUpdate(req.params.id,{status:req.body.status}).then((updatedTodo) => {
-            const tempTodo = {_id:updatedTodo._id,title:updatedTodo.title,status:req.body.status,createdDate:updatedTodo.createdDate}
+            const tempTodo = {_id:updatedTodo._id,title:updatedTodo.title,status:req.body.status}
             res.json(tempTodo);
         });
         }
