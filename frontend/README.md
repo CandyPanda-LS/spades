@@ -7,7 +7,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd spades/backend
+  cd spades/fontend
 ```
 
 Install dependencies
