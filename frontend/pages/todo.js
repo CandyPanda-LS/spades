@@ -63,7 +63,6 @@ export default function Todo() {
 		const tempTodoObj = {
 			status: !status
 		}
-		console.log(tempTodoObj)
 		todoAPI.updateTodoStatus(id, tempTodoObj).then().catch();
 	};
 

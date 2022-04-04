@@ -18,7 +18,7 @@ export default function Login() {
 			password:password
 		}
 		authAPI.authLogin(userObj).then((res)=>{
-			localStorage.setItem('token',res)
+			localStorage.setItem('token',res.token)
 			window.location.href = '/';
 		}).catch((e)=>{
 			setError(true)

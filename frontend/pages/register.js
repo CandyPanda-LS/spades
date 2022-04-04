@@ -18,8 +18,7 @@ export default function Register(props) {
 		}
 
 		authAPI.authReg(regObj).then((res) => {
-			console.log(res)
-			localStorage.setItem('token', res)
+			localStorage.setItem('token', res.token)
 			window.location.href = '/';
 
 		}).catch(e => console.log(e))
