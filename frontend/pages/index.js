@@ -11,7 +11,6 @@ export default function Home() {
 	const [isAuthenticated, setIsAuthenticated] = useState (false);
 
 	useEffect(()=>{
-		console.log(localStorage.getItem("token"))
 		if(localStorage.getItem("token") != null){
 			setIsAuthenticated(true)
 		}else{

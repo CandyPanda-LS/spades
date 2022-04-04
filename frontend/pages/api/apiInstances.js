@@ -8,7 +8,7 @@ const apiInstance = axios.create({
 const authHeader = ()=>{
     const token = localStorage.getItem("token")
     if (token) {
-        return { "x-auth-token": token };
+        return { "authToken": token };
       } else {
         return {};
       }
