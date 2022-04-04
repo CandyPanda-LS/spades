@@ -5,16 +5,16 @@ const todoRoutes = express.Router();
 
 
 
-// todoRoutes.post("/",auth,  addTodo);
-// todoRoutes.get("/",auth,  getTodoList);
-// todoRoutes.get("/:id",auth,  getTodoById);
-// todoRoutes.put("/:id",auth,  updateTodoStatus);
-// todoRoutes.delete("/:id",auth,  deleteTodo);
+todoRoutes.post("/",auth,  addTodo);
+todoRoutes.get("/",auth,  getTodoList);
+todoRoutes.get("/:id",auth,  getTodoById);
+todoRoutes.put("/:id",auth,  updateTodoStatus);
+todoRoutes.delete("/:id",auth,  deleteTodo);
 
 
-todoRoutes.post("/",  addTodo);
-todoRoutes.get("/",  getTodoList);
-todoRoutes.get("/:id", getTodoById);
-todoRoutes.put("/:id",  updateTodoStatus);
-todoRoutes.delete("/:id",  deleteTodo);
+// todoRoutes.post("/",  addTodo);
+// todoRoutes.get("/",  getTodoList);
+// todoRoutes.get("/:id", getTodoById);
+// todoRoutes.put("/:id",  updateTodoStatus);
+// todoRoutes.delete("/:id",  deleteTodo);
 export default todoRoutes;
